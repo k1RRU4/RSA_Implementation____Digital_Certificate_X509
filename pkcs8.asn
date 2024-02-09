@@ -1,0 +1,12 @@
+PKCS8 DEFINITIONS ::= BEGIN
+  PrivateKeyInfo ::= SEQUENCE {
+    version     INTEGER,
+    algorithm   AlgorithmIdentifier,
+    privateKey  OCTET STRING
+  }
+
+  AlgorithmIdentifier ::= SEQUENCE {
+    algorithm   OBJECT IDENTIFIER,
+    parameters  NULL OPTIONAL
+  }
+END
